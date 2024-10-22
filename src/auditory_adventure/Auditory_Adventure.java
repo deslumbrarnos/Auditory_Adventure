@@ -15,6 +15,10 @@ public class Auditory_Adventure {
      */
     public static void main(String[] args) {
         System.out.println("¡Bienvenidass!");
+        System.out.println("Iniciando programa...");
+        
+        HolaVentana MiaVentana = new HolaVentana();
+        MiaVentana.setVisible(true);
     }
     
 }
