@@ -14,6 +14,7 @@ public class LookPrincipal extends javax.swing.JFrame {
      * Creates new form LookPrincipal
      */
     public LookPrincipal() {
+        System.out.println("hola");
         initComponents();
     }
 
