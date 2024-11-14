@@ -5,8 +5,8 @@
 package auditory_adventure.SiuControl;
 
 import auditory_adventure.SiuModelo.SiuModel;
-import auditory_adventure.SiuControl.SiuController;
-import auditory_adventure.SiuVista.SiuView;
+import auditory_adventure.SiuVista.LookPrincipal;
+
 
 /**
  *
@@ -15,10 +15,9 @@ import auditory_adventure.SiuVista.SiuView;
 public class Auditory_Adventure {
     public static void main(String[] args) {
         SiuModel siuModel = new SiuModel();
-        SiuView siuView = new SiuView();
+        LookPrincipal siuView = new LookPrincipal();
         SiuController siuController = new SiuController(siuModel, siuView);
-
-        siuController.setSiuData("Hola, MVC con Siu Lee!");
-        siuController.updateSiuView();
+        siuController.iniciar();
     }
+    
 }
