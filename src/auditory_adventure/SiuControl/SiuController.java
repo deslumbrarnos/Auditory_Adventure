@@ -5,8 +5,7 @@
 package auditory_adventure.SiuControl;
 
 import auditory_adventure.SiuModelo.SiuModel;
-import auditory_adventure.SiuVista.SiuView;
-
+import auditory_adventure.SiuVista.LookPrincipal;
 
 /**
  *
@@ -14,18 +13,16 @@ import auditory_adventure.SiuVista.SiuView;
  */
 public class SiuController {
     private SiuModel siuModel;
-    private SiuView siuView;
+    private LookPrincipal siuLook;
 
-    public SiuController(SiuModel siuModel, SiuView siuView) {
+    public SiuController(SiuModel siuModel, LookPrincipal siuLook) {
+        System.out.println("iniciando controlador");
         this.siuModel = siuModel;
-        this.siuView = siuView;
+        this.siuLook = siuLook;
     }
 
-    public void setSiuData(String siuData) {
-        siuModel.setSiuData(siuData);
-    }
-
-    public void updateSiuView() {
-        siuView.printSiuData(siuModel.getSiuData());
+    
+    public void iniciar () {
+        siuLook.setVisible(true);
     }
 }
