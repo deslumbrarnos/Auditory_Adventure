@@ -12,3 +12,11 @@ Sí hay label, el resto elimínalo.
 -> Corrige las carencias y en el label inserta una imagen donde "pintes" el look de como sería la ventana principal.
 -> Refactoriza (cambia) los nombres de todas las clases y objetos que uses de forma que sean exclusivos tuyos y del proyecto (en el futuro no evaluaré nada con nombres genéricos automatizados).
 -> Modifica el README.md donde añadas más explicación sobre como funciona el juego.
+
+
+2º modificación:
+   UN SÓLO MAIN POR PROYECTO
+Elimina la imagen (en el sentido de ser usada guía del look), y debes tener 3 ventanas (la tercera es el JDialog):
+1-> presentación, no redimensionable (tamaño mediano), simulando la carga, y desaparece por tiempo.
+2-> Salta la principal, usa la imagen "Auditory_Adventure.png":retocada sin los textos y los botones, sea el fondo de tu panel principal. Y donde todos los botones son funcionales en el sentido de mandar un mensaje por consola, y usar el botón "tuerca" con un menú contextual y una opción configuración con un JDialog modificado. Donde los cambios del look y el nivel de dificultad del juego, y debe poder cargar los datos guardados en el arranque.
+Todo los métodos y clases documentados.
